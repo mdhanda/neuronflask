@@ -1,10 +1,8 @@
-from flask import Flask, render_template, request,jsonify
+from flask import Flask, render_template, request
 from flask_cors import CORS,cross_origin
-import requests
 
 from neuron.neuron import Neuron
 from utilities.utils import Utils
-import utilities.constants as const
 
 app = Flask(__name__)
 

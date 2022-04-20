@@ -1,9 +1,6 @@
 import csv
 import pandas as pd
-import pymongo
 import time
-
-from selenium.webdriver.support.wait import WebDriverWait
 
 import utilities.constants as const
 from selenium import webdriver
@@ -11,6 +8,7 @@ from selenium.common.exceptions import StaleElementReferenceException, NoSuchEle
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.wait import WebDriverWait
 from webdriver_manager.chrome import ChromeDriverManager
 
 
