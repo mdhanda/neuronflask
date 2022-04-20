@@ -2,19 +2,30 @@
 
 {% block head %}
 
-<title>Search Page</title>
+<title>Courses Page</title>
 <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 {% endblock %}
 
 {% block body %}
-<div class="content">
-    <h1 style="text-align: center">Search</h1>
 
-    <div class="form">
-        <form action="/review" method="POST">
-            <input type="text" name="content" id="content">
-            <input type="submit" value="Search">
-        </form>
-    </div>
+  <div class="table-courses">
+   <div class="header">Courses</div>
+
+   <table cellspacing="0">
+      <tr>
+         <th>Title</th>
+         <th>Description</th>
+         <th>Price</th>
+         <th width="230">Instructor</th>
+      </tr>
+      {% for course in courses %}
+      <tr>
+         <td><a href="/coursedetails?query={{course['link']}}">{{course['title']}}</a></td>
+         <td>{{course['desc']}} </td>
+         <td>{{course['price']}}</td>
+         <td>{{course['instructor']}}</td>
+      {% endfor %}
+   </table>
 </div>
+
 {% endblock %}

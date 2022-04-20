@@ -1,0 +1,7 @@
+2022-04-20 12:59:48,613 DEBUG Neuron : Selenium driver Get URL: https://courses.ineuron.ai/Salesforce-Administrator
+2022-04-20 12:59:51,639 DEBUG Neuron : URL Page - loading all content by scrolling to bottom
+2022-04-20 12:59:51,906 DEBUG Neuron : Cloud Computing And Types, Salesforce And It’s Products, Sales Cloud-Generic Business Process, Relationships In Salesforce
+2022-04-20 12:59:51,906 DEBUG Neuron : System with Internet Connection, Interest to learn, Dedication
+2022-04-20 12:59:51,906 DEBUG Neuron : Definition Of Cloud Computing And Types, Definition Of Salesforce And It’s Products, Sales Cloud-Generic Business Process, Service Cloud and Customer Service, Company Information
+2022-04-20 12:59:51,907 DEBUG Neuron : Course material, Course resources, On demand recorded videos, Practical exercises, Quizzes, Assignments, Course completion certificate
+2022-04-20 12:59:51,907 DEBUG Neuron : URL Page - extracting all elements using driver.find_elements()

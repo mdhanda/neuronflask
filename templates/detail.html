@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Courses Page</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+
+  <div class="table-courses">
+   <div class="header">Course Detail</div>
+
+      <h4 data-uw-styling-context="true">What you'll learn</h4>
+      <ul data-uw-styling-context="true">
+        {% for objective in objectives %}
+        <li>{{objective}}</li>
+        {% endfor %}
+      </ul>
+
+      <h4 data-uw-styling-context="true">Requirements</h4>
+      <ul data-uw-styling-context="true">
+        {% for requirement in requirements %}
+        <li>{{requirement}}</li>
+        {% endfor %}
+      </ul>
+
+      <h4 data-uw-styling-context="true">Course Curriculum</h4>
+      <ul data-uw-styling-context="true">
+        {% for c in curriculam %}
+        <li>{{c}}</li>
+        {% endfor %}
+      </ul>
+
+      <h4 data-uw-styling-context="true">Course Features</h4>
+      <ul data-uw-styling-context="true">
+        {% for feature in features %}
+        <li>{{feature}}</li>
+        {% endfor %}
+      </ul>
+
+</div>
+
+{% endblock %}

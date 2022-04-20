@@ -20,14 +20,14 @@ img {
   width: 60px;
 }
 
-.table-users {
+.table-courses {
   border: 1px solid #327a81;
   border-radius: 10px;
   box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
   max-width: calc(100% - 2em);
   margin: 1em auto;
   overflow: hidden;
-  width: 800px;
+  width: 1200px;
 }
 
 table {
@@ -155,7 +155,7 @@ table tr:nth-child(2n+1) {
     padding: 0;
   }
 
-  .table-users {
+  .table-courses {
     border: none;
     box-shadow: none;
     overflow: visible;
