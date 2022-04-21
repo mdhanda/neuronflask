@@ -29,7 +29,8 @@ class Neuron(webdriver.Chrome):
         option.add_argument('--disable-dev-sh-usage')
         option.add_experimental_option('excludeSwitches', ['enable-logging']) # Need it to run through cmd-line
 
-        super(Neuron, self).__init__(service=Service(ChromeDriverManager().install()), options=option)
+        #super(Neuron, self).__init__(service=Service(ChromeDriverManager().install()), options=option)
+        super(Neuron, self).__init__(service=Service(const.DRIVER_PATH), options=option)
 
     def __exit__(self, exc_type, exc_val, exc_tb):
         if self.teardown:
