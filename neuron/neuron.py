@@ -26,7 +26,6 @@ class Neuron(webdriver.Chrome):
         option = webdriver.ChromeOptions()
         option.add_argument('--headless')
         option.add_argument('--no-sandbox')
-        option.add_argument('--disable-gpu')
         option.add_argument('--disable-dev-shm-usage')
         option.add_experimental_option('excludeSwitches', ['enable-logging']) # Need it to run through cmd-line
 
@@ -48,8 +47,7 @@ class Neuron(webdriver.Chrome):
                     self.close()
         except (NoSuchWindowException, StaleElementReferenceException) as e:
             # print(e)
-            self.logger.error('In elements, Unable to locate Course Image.', exc_info=True)
-            courseImage.append(None)
+            self.logger.error('In elements, Unable to locate Course Page.', exc_info=True)
         self.logger.debug('Selenium driver Get URL: '+pageURL)
 
     def scroll_to_bottom(self):
