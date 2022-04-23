@@ -33,7 +33,7 @@ def homePage():
         return render_template('index.html')
 
 
-@app.route('/coursedetails', methods=['GET', 'POST'])  # route to display the home page
+@app.route('/coursedetails', methods=['GET'])  # route to display the home page
 @cross_origin()
 def coursePage():
     if request.method == 'GET':
